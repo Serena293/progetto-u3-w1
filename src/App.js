@@ -1,10 +1,11 @@
-
+import 'bootstrap/dist/css/bootstrap.min.css'
+import MyNavbar from './components/myNavbar';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-     <h1>testo di prova</h1>
+     <MyNavbar></MyNavbar>
       </header>
     </div>
   );
