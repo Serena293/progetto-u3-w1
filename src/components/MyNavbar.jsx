@@ -1,6 +1,7 @@
 import React from "react";
 import netflix_logo from '../assets/netflix_logo.png';
 import kids_icon from '../assets/kids_icon.png'
+import search from '../assets/Icons/search.svg'
 
 const MyNavbar = () => {
     return (
@@ -57,7 +58,7 @@ const MyNavbar = () => {
               />
               <button className="btn btn-link d-flex" type="submit">
                 <img
-                  src="./assets/Icons/search.svg"
+                  src={search}
                   alt="search icon"
                   className="align-self-center"
                 />
