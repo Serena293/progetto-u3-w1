@@ -52,7 +52,7 @@ class AllMovies extends Component {
     };
 
     return (
-      <Container fluid className="gallery">
+      <Container fluid className="gallery ">
         <Row className="justify-content-center mt-3 mx-0">
           <Col>
             <h2 className="text-light text-left">{this.props.title}</h2>
@@ -63,7 +63,7 @@ class AllMovies extends Component {
 
             {this.state.isLoading && (
               <div className="text-center">
-                <Spinner animation="border" role="status" variant="success">
+                <Spinner animation="border" role="status" variant="success" >
                   <span className="visually-hidden">Loading...</span>
                 </Spinner>
               </div>
@@ -76,13 +76,15 @@ class AllMovies extends Component {
               infinite
               transitionDuration={100}
               removeArrowOnDeviceType={["tablet", "mobile"]}
+              
             >
               {this.state.movies.map((movie) => (
                 <div key={movie.imdbID}>
                   <img
                     src={movie.Poster}
                     alt={movie.Title}
-                    style={{ width: "100%" }}
+                    style={{ width: "100%"}}
+                    
                   />
                   <p className="text-light">{movie.Title}</p>
                 </div>

@@ -10,7 +10,7 @@ const MyMain = () => {
     <main>
       <section>
         <AllMovies title="Trending Now" source={`${url}friends`} />
-        <AllMovies title="Watch It Again" source={`${url}Harry Potter`} />
+        <AllMovies title="Watch It Again" source={`${url}Marvel`} />
         <AllMovies title="New Releases" source={`${url}disney`} />
       </section>
     </main>
